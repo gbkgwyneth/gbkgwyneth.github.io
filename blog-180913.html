@@ -105,45 +105,69 @@ http://gwyneth.butera.org/college-exams-jupyter.html
 
                 <div class="blog-page">
                     <div class="blog-image">
-                        <img src="img/blog/img-180807-01.jpg" alt="">
+                        <img src="img/blog/pipes-banner.jpg" alt="">
                     </div>
                     <div class="blog-container">
                         <div class="row">
 
                             <!--Blog Heading Start-->
                             <div class="blog-heading col-md-8 offset-md-2">
-                                <span class="cat">Thoughts</span>
-                                <h1>Balancing the boat.</h1>
-                                <span class="blog-date">1 September 2018</span>
+                                <span class="cat">Python</span>
+                                <h1>Generalized pipelines.</h1>
+                                <span class="blog-date">13 September 2018</span>
                             </div>
                             <!--Blog Heading Start-->
 
                             <!--Blog Content Start-->
                             <div class="blog-content col-md-10 offset-md-1">
                                 <p>
-                                  For the past few years, life has been all about re-balancing the boat after surge
-                                  after surge. But one thing had been constant: my job. While my "in country managers"
-                                  and reporting structure was always changing, I was working with the same group that
-                                  I had been working with for <strong>21</strong> years. It was staable, steady work.
-                                  I enjoyed it. I respected my team. They are family. They have been with me as I've
-                                  gone through the stages of life: moving, new babies, teenagers, kids heading to college.
-                                  My job wasn't just work; it was a big part of my life.
+                                  For my latest <a href="https://generalassemb.ly/">General Assembly</> Data Science Immersive project (<a href="http://gobbledygoon.com/2018/09/project-3-reddit-predictions/">http://gobbledygoon.com/2018/09/project-3-reddit-predictions/</a>), I wanted to test a whole bunch of different classification models on my data very quickly.
                                 </p>
                                 <p>
-                                  In some little (ok, not so little) corner of my worry-brain, I knew that I would become
-                                  a target of a resource action. When the shoe dropped, it was a relief in some sense. I no
-                                  longer had to worry about that happening. It happened. But then the other worries... What's
-                                  next? Will I have the skills?
+                                  I admit that I have a few organizational "rabbit holes" (I like to think these are GOOD things when it comes to coding):
+                                </p>
+                                  <ul>
+                                  <li> Never type anything twice.... Boring.</li>
+                                  <li> If I run it, never run it again..... Waste of time.</li>
+                                  <li> And a few others that show my age(?) -- memory concerns, etc. (Not MY memory -- computer memory!) I hate to not free up memory as soon as possible.
+                                  </ul>
+
+                                <p>
+                                  As the data scraping was easy and the feature engineering quite simple (I do know that I could have gone deeper on this). So for me the big challenge was ....  how best to manage different models, tune hyperparameters, etc. My initial idea?
                                 </p>
                                 <p>
-                                  Luck was on my side. I have been following the growth of Data Science for years. I started taking
-                                  Coursera classes over five years ago. I started attending Meetups. But with family and work, I
-                                  didn't have the time to commit to a true course. My severance package from IBM gave me a
-                                  not quite golden ticket, but at least a bronze one. A chance to enroll in the Data Science class that
-                                  I've been eager to take for quite some time.
+                                  <b>Build the world's most amazing pipeline building and grid searching function!</b>
                                 </p>
                                 <p>
-                                  So here I am once again, balancing our family boat after yet another surge had rocked it.
+                                  First, I created a <b>dictionary</b> that lists <b>all</b> the pipeline elements. For this project, here's what I started with; I know that it will grow as I learn more about various features and models:
+                                </p>
+                                <p>
+                                  <script src="https://gist.github.com/gbkgwyneth/db9153c6d7af19a4bb3cc06c6bb91b2f.js"></script>
+                                </p>
+                                <p>
+                                  Each entry has a <b>key</b> (a short string) and a value that is a <b>class</b> (a member of a pipeline).
+                                </p>
+                                <p>
+                                  For each class, I have started to include some of the  hyperparameters that I might consider tuning:
+                                  <script src="https://gist.github.com/gbkgwyneth/c21f7fb173c607aee0116af14a8af17e.js"></script>
+                                </p>
+                                <p>
+                                  Of course, as I run the pipeline on a given dataset, I will consider which hyperparameters to adjust.
+                                </p>
+                                <p>
+                                  To pull it all together, we create a pipeline and a parameter dictionary based on the items in <b>items</b>, then call a grid search on these:
+                                  <script src="https://gist.github.com/gbkgwyneth/6586e234218471794b8ab2556c2724f7.js"></script>
+                                </p>
+                                <p>
+                                  There is much left to do to improve this, and I will keep adding to and cleaning it up as I move forward.
+                                </p>
+                                <p>
+                                  The full WIP can be found on my github: <a href="https://github.com/gbkgwyneth/pipeline-generalization">Pipeline generalization</a>. I have more work to do on it to truly generalize it, but I have found it quite useful for my own purposes so far ....
+                                </p>
+                                <p>
+                                  <font size=-2><i>
+                                  Thanks to: <a href="https://bloggeriq.com/embed-code-snippet-using-github-gist-in-blog-post/">How To Embed Code Snippet Using Github Gist Within Blog Posts</a>
+                                  </i></font>
                                 </p>
                             </div>
                             <!--Blog Content End-->
