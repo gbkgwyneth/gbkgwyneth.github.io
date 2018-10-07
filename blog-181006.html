@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-random-animation="false" data-animation="36">
+    <head>
+
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
+        <meta name="description" content="vCard / Resume / Personal / Portfolio Template" />
+        <meta name="author" content="cosmos-themes" />
+
+        <!--Page Title-->
+        <title>Gwyneth Butera</title>
+        <!--Plugins Css-->
+        <link rel="stylesheet" href="css/plugins.css">
+        <!--Main Styles Css-->
+        <link rel="stylesheet" href="css/style-dark.css">
+        <!--Color Css-->
+        <link rel="stylesheet" href="css/red-color.css">
+
+        <!--Modernizr Js-->
+        <script src="js/modernizr.js"></script>
+
+        <!--Favicons-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+
+        <!--Preloader Start-->
+        <div class="preloader">
+            <div class="loader">
+                <!--Your Name-->
+                <h4>Gwyneth Butera</h4>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+
+        <div id="page">
+
+
+            <!--Header Start-->
+            <header>
+                <div class="header-content">
+
+                    <!--Mobile Header-->
+                    <div class="header-mobile">
+                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                        <h2>Gwyneth Butera</h2>
+                    </div>
+
+                    <!--Main Header-->
+                    <div class="header-main" data-simplebar>
+                        <div class="image-container">
+                            <h2 class="header-name">Gwyneth Butera</h2>
+                            <img src="img/profile-img.jpg" alt="profile-pic">
+                        </div>
+
+                        <!--Nav Menus-->
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="index.html#home"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="index.html#about"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="index.html#resume"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
+                                <li><a href="index.html#portfolio"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="index.html#blog" class="active"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+                                <li><a href="index.html#contact"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <!--Nav Footer-->
+                        <div class="nav-footer">
+                            <!--Social Links-->
+                            <ul class="social">
+                              <li><a href="https://www.linkedin.com/in/gwynethbutera/"><i class="fab fa-linkedin-square" aria-hidden="true"></i></a></li>
+                              <li><a href="https://github.com/gbkgwyneth"><i class="fab fa-github-square"></i></a></li>
+                              <li><a href="https://twitter.com/gbkgwyneth"><i class="fab fa-instagram-square"></i></a></li>
+                              <li><a href="https://instagram.com/gbkgwyneth"><i class="fab fa-twitter-square"></i></a></li>
+                              <li><a href="https://www.facebook.com/gbkgwyneth"><i class="fab fa-facebook-square"></i></a></li>                            </ul>
+                            <!--Copyright Text-->
+                            <div class="copy">
+                                <p>2018 &copy; Cosmos-Themes.<br>All Right Reserved.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!--Header End-->
+
+
+            <!--Main Start-->
+            <div id="main" class="site-main">
+
+                <div class="blog-page">
+                    <div class="blog-image">
+                        <img src="img/blog/weather-banner.jpg" alt="">
+                    </div>
+                    <div class="blog-container">
+                        <div class="row">
+
+                            <!--Blog Heading Start-->
+                            <div class="blog-heading col-md-8 offset-md-2">
+                                <span class="cat">Python</span>
+                                <h1>Scraping weather data.</h1>
+                                <span class="blog-date">6 October 2018</span>
+                            </div>
+                            <!--Blog Heading Start-->
+
+                            <!--Blog Content Start-->
+                            <div class="blog-content col-md-10 offset-md-1">
+                                <p>
+                                  As I explored the data for my Data Science Immersive Capstone project, I realized with much disappointment that the data was simply not as I interesting as I had hoped it might be. While there were some predictions and inferences I would be able to make, the data did not lead to much in the way of interesting data engineering nor modeling. I decided to add in data from outside sources. For my Capstone, the first idea I had was WEATHER data!
+                                </p><p>
+                                  Off to Google I go. I thought I would easily turn up a <a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a> script to scrape monthly weather data. No luck. So time to write my own.
+                                </p><p>
+                                  As I set up the script, I ran into a number of issues.
+                                </p><p>
+                                  First, pulling up <a href="https://www.wunderground.com/history/monthly/KATL/date/2018-9-1">Weather Underground historical data</a> gave me empty tables. While that was frustrating, I kept digging. (I dig; sometimes that's good, sometimes it isn't ...) I soon realized that if I went to the <a href="https://espanol.wunderground.com/history/monthly/KATL/date/2018-9-1">Spanish language site</a>, I could get the tables. I was happy to go with that and translate a little, my daughter suggested replacing the "espanol" in the URL with "english". I replied that it would never work. I was proven wrong. So I could reach data at an alternative URL : <a href="https://english.wunderground.com/history/monthly/KATL/date/2018-9-1">English Weather Underground</a>.
+                                </p><p>
+                                  With access to the correct pages, I was faced with a choice. Visit the few pages I needed (12 months and 6 cities = 72 pages) and copy/paste the tables. But that would not be satisfying.
+                                </p><p>
+                                  Hello <b>BeautifulSoup</b>. I still was incredulous that I couldn't turn up a script. Perhaps it is out there, but, since I'm working on developing my skills, I chose to take the time to write my own script.
+                                </p><p>
+                                  Second issue. At the time of this writing, the tables are incorrectly formatted. The category "wind" is sub-labeled 'Max', 'Avg', 'Max':
+                                </p><p>
+                                  <img src ="img/blog/wu-wind.jpg" alt="Oops" />
+                                </p><p>
+                                  So, to scrape the data!
+                                </p><p>
+                                  First, import the regular libraries.
+                                </p>
+                                  <codeblock><pre><font color="#fff">
+    import requests
+    import pandas as pd
+    from bs4 import BeautifulSoup
+    from datetime import datetime
+                                </font></pre></codeblock>
+                                <p>
+                                  Then onto the logic. I needed 8 cities of data for 2 different years:
+                                </p>
+                                  <codeblock><pre><font color="#fff">
+    city_codes = {
+        'atl' : "KATL",
+        'bos' : "KBOS",
+        'chi' : "KORD",
+        'la' : "KCQT",
+        'phl' : "KPHL",
+        'sf' : "KSFO",
+        'dc' : "KDCA",
+        'nyc' : "KNYC"
+    }
+
+    start_year = 2017
+    end_year = 2018
+                                </font></pre>
+                                  </codeblock>
+                                <p>
+                                  First I start with creating a function that takes a start year, an end year, and a "city code" (as used on Weather underground) and ceclare the order of columns on WU. While this could be generalized, we noted above that the column names aren't correct, so it is better to double-check.
+                                </p>
+                                  <codeblock><pre><font color="#fff">
+    def read_write_wx(start_year, end_year, wx_code):
+        weather_cols = ["date", 'temp_max', 'temp_avg', 'temp_min', 'dew_max', 'dew_avg', 'dew_min',
+                        'hum_max', 'hum_avg', 'hum_min', 'sea_max', 'sea_avg', 'sea_min',
+                        'vis_max', 'vis_avg', 'vis_min', 'wind_avg', 'wind_min', 'wind_max',
+                        'prec', 'events' ]
+                                  </font></pre></codeblock>
+                                <p>
+                                  As I dug into the html, I saw that there is little use of class and id tags, so there's not much chance of generalizing the script. Instead, I find my way down to the correct table, and then find the data, and grab it using the order of the columns as specified.
+                                </p><p>
+                                  While I had hoped to simply iterate through each column of each row, some data was missing. I generalized most of the columns, but I also added a little data cleaning for the "event" columns.
+                                </p>
+                                  <codeblock><pre><font color="#fff">
+        list_wx = []
+        for yr in range(start_year, end_year+1):
+            for mn in range(1, 13):
+
+                # Open wunderground.com url
+                url = "http://english.wunderground.com/history/airport/" + wx_code + "/" + str(yr)+ "/" + str(mn) + "/1/MonthlyHistory.html?&reqdb.zip=&reqdb.magic=&reqdb.wmo="
+                res = requests.get(url)
+                res.status_code
+                soup = BeautifulSoup(res.content, 'lxml')
+
+                hist_table = soup.find_all('table', { 'id' : 'obsTable'})
+                for h in hist_table:
+                    body = h.find_all('tbody')
+                    for b in body[1:]:
+                        row_list = b.find_all('tr')
+                        for row in row_list:
+                            col_list = row.find_all('td')
+                            wx = dict()
+                            day = col_list[0].find('a').text
+                            wx["date"] = datetime(yr, mn, int(day))
+                            for i in range(1,20):
+                                val = 0
+                                elem = col_list[i].find('span')
+                                if elem:
+                                    val = elem.text
+                                wx[weather_cols[i]] = val
+                            events = "None"
+                            elem = col_list[20]
+                            if elem:
+                                events = elem.text.strip()
+                                events = events.replace('\t','')
+                                events = events.replace('\n','')
+                                if len(events) == 0:
+                                    events = "None"
+                            wx['events'] = events
+                            list_wx.append(wx)
+                                  </font></pre></codeblock>
+                                <p>
+                                  To close out the function, I casted my list of dictionaries (each element of the list corresponds to a day of weather data) into a Pandas DataFrame.
+                                </p><p>
+                                  To run the whole thing, we call the function, looping through the cities in order to create a separate CSV file for each:
+                                </p>
+                                  <codeblock><pre><font color="#fff">
+      for city, wx_code in city_codes.items():
+          df = read_write_wx(start_year, end_year, wx_code)
+          df.to_csv('../data/' + city + '/weather.csv', index=False)
+                                  </font></pre></codeblock>
+                                <p>
+                                  And I now have two years of weather data for each of the 8 cities on my list.
+                                </p>
+                            </div>
+                            <!--Blog Content End-->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Jquery JS-->
+        <script src="js/jquery.min.js"></script>
+        <!--Plugins JS-->
+        <script src="js/plugins.min.js"></script>
+        <!--Site Main JS-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
