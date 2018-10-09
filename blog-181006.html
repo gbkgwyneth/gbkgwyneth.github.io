@@ -136,6 +136,8 @@
                                 </p><p>
                                   <img src ="img/blog/wu-wind.jpg" alt="Oops" />
                                 </p><p>
+                                  From looking at other data sources, I believe that the first two columns are 'Max' and 'Avg', but I have no idea what the third columns is. Gust?
+                                </p><p>
                                   So, to scrape the data!
                                 </p><p>
                                   First, import the regular libraries.
@@ -172,7 +174,7 @@
     def read_write_wx(start_year, end_year, wx_code):
         weather_cols = ["date", 'temp_max', 'temp_avg', 'temp_min', 'dew_max', 'dew_avg', 'dew_min',
                         'hum_max', 'hum_avg', 'hum_min', 'sea_max', 'sea_avg', 'sea_min',
-                        'vis_max', 'vis_avg', 'vis_min', 'wind_avg', 'wind_min', 'wind_max',
+                        'vis_max', 'vis_avg', 'vis_min', 'wind_avg', 'wind_unk', 'wind_max',
                         'prec', 'events' ]
                                   </font></pre></codeblock>
                                 <p>
